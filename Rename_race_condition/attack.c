@@ -15,13 +15,16 @@ int swapFiles(const char *a, const char *b, char *argv[]){
 	const char *tempfile = "tempfile";
 	if(rename(argv[1], tempfile) != 0){
 		fprintf(stderr, "Error on first rename %s\nErrno code => %d\n", strerror(errno), errno);
+		return -1;
 	}
 
 	if(rename(argv[2], argv[1]) != 0){
 		fprintf(stderr, "Error on second rename %s\nErrno code => %d\n", strerror(errno), errno);
+		return -1;
 	}
 	if(rename(tempfile, argv[2]) != 0){
 		fprintf(stderr, "Error on third rename %s\nErrno code => %d\n", strerror(errno), errno);
+		return -1;
 	}
 
 	return 0;
