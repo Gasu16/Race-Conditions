@@ -23,6 +23,6 @@ To run:
         
         ./victim file_1 
 
-Pay attention: probably it will give some tries before actually working due to the timing of both the process attack and victimeng.
+Pay attention: probably it will give some tries before actually working due to the timing of both the process attack and victim.
 
 Improving soon...

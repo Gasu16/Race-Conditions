@@ -13,6 +13,7 @@ ssize_t read(int fd, void *buf, size_t count);
 
 int main(int argc, char *argv[]){
 
+	// Check the number of args passed
 	if(argc != 2){
 		fprintf(stderr, "Please enter 1 arg as file_1\nUsage: ./victim file_1\n");
 		return -1;
