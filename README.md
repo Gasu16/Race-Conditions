@@ -3,13 +3,13 @@
 Set of race conditions based attacks (TOCTTOU)
 
 
-```diff
 
-file_1 => bait file (the file we are deceiving the system with)
 
-file_2 => target file (the file we actually want to open)
+        file_1 => bait file (the file we are deceiving the system with)
 
-```
+        file_2 => target file (the file we actually want to open)
+
+
 
 To compile:
 
